@@ -11,9 +11,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## R Markdown
 
-Adding new lines to the analysis.Rmd
+Adding new lines to the analysis.Rmd  
+
+[Plant some trees with Poa Corrales and Elio Camp](https://eliocamp.github.io/reproducibility-with-r/materials/day2/01-git/#lets-plant-some-trees
+)
+
+paocorrales/flametree_gallery  
+
+* clone Pao's repo.  
+
+You find this topic here:
+[rrtools](https://eliocamp.github.io/reproducibility-with-r/materials/day2/02-rrtools/) 
 
 
+DOI:  10.5281/zenodo.6363516  
+
+https://doi.org/10.5281/zenodo.6363516
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
