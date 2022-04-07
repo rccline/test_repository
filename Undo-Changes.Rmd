@@ -11,7 +11,7 @@ library(tidyverse)
 ```
 
 ## Undo Changes(Checkout, Revert and Reset)
-Nathan Williams' YouTube.  Click [here](https://www.youtube.com/watch?v=UmE0uf5UMzA&t=229)
+Nathan's YouTube.  Click [here](https://www.youtube.com/watch?v=UmE0uf5UMzA&t=229)
 
 This is a test document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
