@@ -18,7 +18,7 @@ Nathan's YouTube.  Click [here](https://www.youtube.com/watch?v=UmE0uf5UMzA&t=22
 - `git rebase origin/main` 
 
 #### 3. Branching for **`feature development`**. 
-  - Remembering what features I am working with.  
+  - Strategy to remember what features I am working with.  
   - One strategy:  Name each brach for the file being worked on.
     - E.g.  Branch name is:  `feature/filename`  
     - E.g. `features/new-file2` while developing file named:  *new-file2.R*
