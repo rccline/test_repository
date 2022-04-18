@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This a new content file.   after f341889  
 
 # remote: Resolving deltas: 100% (1/1), completed with 1 local object.
@@ -11,3 +12,10 @@
 # nothing to commit, working tree clean 
 
 ## Now, I commit these changes.  
+=======
+# This a revised content file.  
+# This file was revised in commit 39f545b   
+
+# Next, I will switch to branch 2 and make a revised commit to the new branch.  
+
+>>>>>>> db6d6e8f2e1b1b455fa35447541584d338fe39e7
