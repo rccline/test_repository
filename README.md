@@ -16,3 +16,13 @@ Nathan's YouTube.  Click [here](https://www.youtube.com/watch?v=UmE0uf5UMzA&t=22
 - `git fetch origin main` to download the main branch with latests commits into your local system.   
 - First Rebase on your local system.  
 - `git rebase origin/main` 
+
+#### 3. Branching for **`feature development`**. 
+  - Remembering what features I am working with.  
+  - One strategy:  Name each brach for the file being worked on.
+    - E.g.  Branch name is:  `feature/filename`  
+    - E.g. `features/new-file2` while developing file named:  *new-file2.R*
+  - Second strategy I am exploring is `creating a folder for each feature`, or at least for the features in development.  
+  - By using separate folders for feature development, I know the main or master branch is clean.  
+  
+  
