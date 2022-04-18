@@ -34,9 +34,10 @@ Nathan's YouTube.  Click [here](https://www.youtube.com/watch?v=UmE0uf5UMzA&t=22
   - `git merge *branchtomerge*`  
   - Follow merge with *alias* `git graph`  or `git log --oneline`  
   
-#### 5. conflicts  
+#### 5.  Conflict resolution  (C.f. Nathan Williams)
   - If you have a file that has changed in both branches, you will have a conflict.  
-  - 
+  - When this type of conflict arises, the offending document will have the merge conflicts displayed.   - You can correct the file and save.  
+  - Add the changed file to staging area and `git commit` with out the -m "message".  It will give you a default message.   
   
 #### 6. Create a branch using [git stash](https://www.golinuxcloud.com/git-stash-explained-in-detail-with-examples/)  ^[A stash is simply temporary storage in git for the changes that you make in your active directory before committing them. It is most helpful if you are running a series of tests on your code and you are not sure which one will work out. You can always store such tests in a stash to later review and pick what you feel comfortable applying in your project.]  
 
