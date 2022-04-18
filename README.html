@@ -392,23 +392,92 @@ latests commits into your local system.<br />
 <h4>3. Branching for
 <strong><code>feature development</code></strong>.</h4>
 <ul>
-<li>Strategy to remember what features I am working with.<br />
+<li><code>git checkout -b hotfix-1</code>
+<ul>
+<li>create a branch named hotfix-1 and switch to the new branch.</li>
+</ul></li>
+<li>Branch types: features, issues, bug_fix, hotfix-1<br />
 </li>
-<li>One strategy: Name each brach for the file being worked on.
+<li>Strategies to remember what features and branch I am working
+with.<br />
+</li>
+<li><strong>Strategy One</strong>: Name each brach for the file being
+worked on.
 <ul>
 <li>E.g. Branch name is: <code>feature/filename</code><br />
 </li>
 <li>E.g. <code>features/new-file2</code> while developing file named:
 <em>new-file2.R</em></li>
 </ul></li>
-<li>Second strategy I am exploring is
+<li><strong>Strategy Two</strong>: I am exploring is
 <code>creating a folder for each feature</code>, or at least for the
-features in development.<br />
-</li>
+features in development.
+<ul>
 <li>By using separate folders for feature development, I know the main
-or master branch is clean.</li>
+or master branch is clean.<br />
+</li>
+</ul></li>
+<li>Useful shortcut to change branches: <code>git checkout -</code></li>
 </ul>
 </div>
+<div id="merging" class="section level4">
+<h4>4. Merging</h4>
+<ul>
+<li>If you want to merge into the master: First be sure you are in the
+master branch.<br />
+</li>
+<li><code>git merge *branchtomerge*</code><br />
+</li>
+<li>Follow merge with <em>alias</em> <code>git graph</code> or
+<code>git log --oneline</code></li>
+</ul>
+</div>
+<div id="conflicts" class="section level4">
+<h4>5. conflicts</h4>
+<ul>
+<li>If you have a file that has changed in both branches, you will have
+a conflict.<br />
+</li>
+<li></li>
+</ul>
+</div>
+<div id="create-a-branch-using-git-stash" class="section level4">
+<h4>6. Create a branch using <a href="https://www.golinuxcloud.com/git-stash-explained-in-detail-with-examples/">git
+stash</a> <a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h4>
+<p><code>git stash list [&lt;options&gt;]</code><br />
+<code>git stash show [&lt;stash&gt;]</code><br />
+<code>git stash drop [-q|--quiet] [&lt;stash&gt;]</code><br />
+<code>git stash ( pop | apply ) [--index] [-q|--quiet] [&lt;stash&gt;]</code><br />
+<code>git stash branch &lt;branchname&gt; [&lt;stash&gt;]</code><br />
+<code>git stash [save [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet] [-u|--include-untracked] [-a|--all] [&lt;message&gt;]]</code><br />
+<code>git stash clear</code><br />
+<code>git stash create [&lt;message&gt;]</code><br />
+<code>git stash store [-m|--message &lt;message&gt;] [-q|--quiet] &lt;commit&gt;</code></p>
+<p>Your changes before stashing<br />
+- git add .</p>
+<p>Store the changes (stash)<br />
+- git stash save “Saving changes from edit this file”</p>
+<p>List stashed changes<br />
+- git stash list</p>
+<p>At this stage your local repo is clean - git status</p>
+<p>To undo stash by popping the stash<br />
+- git stash pop</p>
+<p>Verify if the stash was popped<br />
+- git stash list</p>
+<p>Verify the pending changes before stash was done<br />
+- git status</p>
+</div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>A stash is simply temporary storage in git for the
+changes that you make in your active directory before committing them.
+It is most helpful if you are running a series of tests on your code and
+you are not sure which one will work out. You can always store such
+tests in a stash to later review and pick what you feel comfortable
+applying in your project.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 
 
