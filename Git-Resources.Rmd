@@ -1,0 +1,28 @@
+---
+title: "Git Resources"
+author: "Robert C Cline Sr"
+date: '2022-04-17'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Resources to learn Git.    
+ 
+ 1. [Julie Ng](https://www.youtube.com/watch?v=I0hUvy7SW6M) is a Microsoft engineer supporting Azure Pipelines.  Julie posts tutorials on YouTube.  This link is a totorial titled:  *How I Resolve Git Merge Conflicts with Rebasing (Abort)*. 
+ 
+2. [Team Programmer](https://www.youtube.com/watch?v=gkGZzd9c4ow&t=195s) Git rebase basics. 
+- This is complicated.  
+- `git fetch origin main` to download the main branch with latests commits into your local system.   
+- First Rebase on your local system.  
+- `git rebase origin/main` to rebase the feature branch on top of the latest commit in the main branch. ^[If you previously pushed your unrebased feature branch onto the remote, you are going to have to use the `git force push` or `git push -f origin af`  to force push your copy of your feature branch to the remote.  If you did not previously push your unrebased feature branch, you will not have to use the force push.  You could simply use git push, that will create a brand new branch with the same name on the remote.]  
+- **CAVEAT**:  *Avoid rebasing any shared or public branches*.  
+  a. Because, if somebody has that branch checked out and you rebase it on your local system and pushed, and force pushed it up, that person will have to back up their changes somewhere and do a `git reset --hard` to override their copy of that branch on their system which is not ideal.  
+  b. Before you do this, *make a copy of your local repository somewhere* before you run the rebase process  
+  c. You can always roll it back with a `git rebase --abort`  
+
+3. [Team Programmer](https://www.youtube.com/watch?v=OXtdxHTh2oY)  Git Rebase:  How to resolve conflicts.  (Always pull before push) ^[Stop video @ 7:00 minutes https://www.youtube.com/watch?v=gkGZzd9c4ow&t=195s]
+ 
+ 

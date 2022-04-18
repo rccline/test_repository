@@ -6,16 +6,16 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
 ```
 
-## Undo Changes(Checkout, Revert and Reset)
+## Undo Changes (Checkout, Revert and Reset)
 Nathan's YouTube.  Click [here](https://www.youtube.com/watch?v=UmE0uf5UMzA&t=229)
 
 This is a test document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
 
 ```{r cars} 
 library(kableExtra)
@@ -25,6 +25,29 @@ kable_classic(full_width = F, html_font = "Cambria", position = "left")
 
 ```
 
+### 1. `git revert`   Revert back to a prior commit.  
+
 I am going to add some stuff here, then run a revert back to f341889  
 
-OK?   
+This tutorial is great.  It illustrates the importance of making small commits.  I.e. one change at a time.  The issue, if you commit changes to several files, and you need to `git revert #hash`, you revert to the changes that are made to those files in *#hash*, and in subsequent files.   
+
+In Nathan's words, you want your commits to be a `*chunk of something*` that you did.  
+
+* Check out Nathan's video ~ 5:30 minutes.  
+
+### 2. `git reset #hash` to reset your project back to a given commit.
+
+* *git reset* is hard core because it  will remove commits.  
+
+* `undo git reset`.  *git reset* will leave the unstaged changes in your working directory after reset.  These changes are temporary.  You *can* undo the reset if you do it immediately.  If you close the file, they are gone forever.  
+
+  - git add . 
+  - git commit -m "undo reset" 
+  - this will add and commit the unstaged changes.
+  - see Nathan's video @ 8:04/10:06  
+ 
+### 3. `git reset #shaw --hard`  
+ 
+ * This takes you back to the #shaw. All subsequent commits are gone forever.  
+ 
+ 
