@@ -23,6 +23,8 @@ knitr::opts_chunk$set(echo = TRUE)
   b. Before you do this, *make a copy of your local repository somewhere* before you run the rebase process  
   c. You can always roll it back with a `git rebase --abort`  
 
-3. [Team Programmer](https://www.youtube.com/watch?v=OXtdxHTh2oY)  Git Rebase:  How to resolve conflicts.  (Always pull before push) ^[Stop video @ 7:00 minutes https://www.youtube.com/watch?v=gkGZzd9c4ow&t=195s]
+3. [Team Programmer](https://www.youtube.com/watch?v=OXtdxHTh2oY)  Git Rebase:  How to resolve conflicts.  (Always pull before push) ^[Stop video @ 7:00 minutes https://www.youtube.com/watch?v=gkGZzd9c4ow&t=195s]  
+
+[Team Programmer - What is git?](https://www.youtube.com/watch?v=gkGZzd9c4ow&t=451s)
  
  
